@@ -1,0 +1,13 @@
+def palindrom(word):
+     return(list(word) == list(reversed(list(word))))
+
+def czypalindrom(word):
+     p = palindrom(word)
+     if p == True:
+         print("Tekst jest palindromem")
+     else:
+         print("Tekst nie jest palindromem")
+
+while True:
+    input_text = str(input())
+    czypalindrom(word = input_text)
